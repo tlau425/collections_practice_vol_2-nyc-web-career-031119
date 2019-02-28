@@ -20,6 +20,6 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  array.group_by(&:itself)
-  .map {|name, counter| name.merge(count: counter.length)}
+  array.group_by(&:itself) #groups same elements
+  .map {|x, i| x.merge(count: i.length)}
 end
