@@ -31,4 +31,5 @@ def merge_data(array1, array2)
 end
 
 def find_cool(cool)
-  
+  cool.select {|i| i.any? {|k,v| v == "cool"}} 
+end
