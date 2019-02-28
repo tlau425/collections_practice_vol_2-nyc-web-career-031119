@@ -23,3 +23,5 @@ def count_elements(array)
   array.group_by(&:itself) #groups same elements
   .map {|x, i| x.merge(count: i.length)}
 end
+
+def merge_data
