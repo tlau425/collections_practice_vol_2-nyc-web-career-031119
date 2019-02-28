@@ -20,7 +20,6 @@ def remove_non_strings(array)
 end
 
 def count_elements(array)
-  array.uniq.each {|i| count = 0}
-  array.each{|x| if x == i then count += 1 end}
-  i[:count] = count
+  array.group_by(&:itself)
+  .map {|name, counter| name.merge(count: counter.length)}
 end
