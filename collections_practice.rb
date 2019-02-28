@@ -22,5 +22,5 @@ end
 def count_elements(array)
   array.uniq.each {|i| count = 0}
   array.each{|x| if x == i then count += 1 end}
-  i[:count] = count}
+  i[:count] = count
 end
